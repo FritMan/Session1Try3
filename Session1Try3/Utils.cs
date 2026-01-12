@@ -18,6 +18,7 @@ namespace Session1Try3
         public static DispatcherTimer Global = new DispatcherTimer { Interval=TimeSpan.FromSeconds(60)};
 
         public static Frame MainMainFrame;
+        //sdfsdfsdf
 
         public static int ExitCount = 0;
 
