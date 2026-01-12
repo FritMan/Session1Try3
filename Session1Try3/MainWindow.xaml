@@ -1,0 +1,22 @@
+﻿<Window x:Class="Session1Try3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Session1Try3"
+        mc:Ignorable="d"
+        Title="Не Навреди" Height="450" Width="800" MinHeight="200" MinWidth="600" Icon="/Assets/Значок приложения.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="TitleLab"/>
+
+        <Button x:Name="ExitBtn" Click="ExitBtn_Click" Content="Выход" Background="Red" HorizontalAlignment="Right"/>
+        <Image Source="/Assets/Логотип.png" Width="50" HorizontalAlignment="Left"/>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Source="Pages\AuthPage.xaml" Grid.Row="1" LoadCompleted="MainFrame_LoadCompleted"/>
+    </Grid>
+</Window>
